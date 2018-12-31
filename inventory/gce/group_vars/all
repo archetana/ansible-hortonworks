@@ -1,12 +1,12 @@
 ---
 cloud_config:
   name_suffix: ''
-  region: 'europe-west1'
-  zone: 'europe-west1-b'
+  region: 'us-east1'
+  zone: 'us-east1-b'
   vpc_name: "{{ cluster_name }}-vpc"
   subnet_name: "{{ cluster_name }}-subnet"
   subnet_cidr: '10.0.10.0/24'
-  admin_username: google-user
+  admin_username: rachetana_gmail_com
   ssh:
     privatekey: '~/.ssh/id_rsa'
 

@@ -163,9 +163,9 @@ More details about how authentication to the Google Cloud Platform works is on t
    * **GCE_CREDENTIALS_FILE_PATH**: the local path to the JSON credentials file
 
    ```
-   export GCE_EMAIL=hadoop-test@hadoop-123456.iam.gserviceaccount.com
-   export GCE_PROJECT=hadoop-123456
-   export GCE_CREDENTIALS_FILE_PATH=~/Hadoop-12345cb6789d.json
+   export GCE_EMAIL=ansible@synthetic-eon.iam.gserviceaccount.com
+   export GCE_PROJECT=synthetic-eon
+   export GCE_CREDENTIALS_FILE_PATH=/home/rachetana_gmail_com/synthetic-eon-4d851f8567e2.json
    ```
 
 

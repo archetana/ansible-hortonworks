@@ -3,7 +3,7 @@
 ## cluster configuration ##
 ###########################
 
-cluster_name: 'mytestcluster'
+cluster_name: 'eoncluster'
 
 ambari_version: '2.7.3.0'                                 # must be the 4-part full version number
 
@@ -31,7 +31,7 @@ disable_firewall: no                                      # set to yes to disabl
 ## java configuration ##
 ########################
 
-java: 'embedded'                                          # can be set to 'embedded', 'openjdk' or 'oraclejdk'
+java: 'openjdk'                                          # can be set to 'embedded', 'openjdk' or 'oraclejdk'
 oraclejdk_options:                                        # only used when java is set to 'oraclejdk'
   base_folder: '/usr/java'                                # the folder where the Java package should be unpacked to
   tarball_location: '/tmp/jdk-8u181-linux-x64.tar.gz'     # the location of the tarball on the remote system or on the Ansible controller
@@ -43,7 +43,7 @@ oraclejdk_options:                                        # only used when java 
 ## database configuration ##
 ############################
 
-database: 'embedded'                                      # can be set to 'embedded', 'postgres', 'mysql' or 'mariadb'
+database: 'postgres'                                      # can be set to 'embedded', 'postgres', 'mysql' or 'mariadb'
 database_options:
   add_repo: yes                                           # if set to 'no', Ansible will not add a repo file (containing the public URL)
   external_hostname: ''                                   # if this is empty, Ansible will install and prepare the databases on the ambari-server node
