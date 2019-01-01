@@ -8,7 +8,7 @@ cloud_config:
   subnet_cidr: '10.0.10.0/24'
   admin_username: rachetana_gmail_com
   ssh:
-    privatekey: '~/.ssh/id_rsa'
+    privatekey: '~/.ssh/google_compute_engine'
 
 firewall_rules:
   - name: "{{ cluster_name }}-allow-internal"            # default firewall rule - do not change
